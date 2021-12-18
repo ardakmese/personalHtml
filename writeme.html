@@ -10,7 +10,7 @@ Geliştirilirken kullanılan tarayıcı : Opera
 <head>
    <meta charset="UTF-8">
    <! –– Meta kullanılacak charset bilgisi eklendi   ––>
-  <meta name="description" content="Anasayfa Arda Akmeşe">
+  <meta name="description" content="Bana Yaz - Arda Akmeşe">
   <! –– Meta description bilgisi eklendi  ––>
   <meta name="keywords" content="Arda, Akmeşe, Kişisel Web Sitesi, İnternet, Temelleri">
   <! –– Meta keywordler, web sayfasının arama motorlarında bulunabilmesi için ––>
@@ -20,7 +20,7 @@ Geliştirilirken kullanılan tarayıcı : Opera
   <! –– Viewport bilgisi giriş yapılan cihaza göre websitesinin içeriğini ayarlamaktadır,
   başlangıç scale 1.0 olarak belirlenmiştir ––>
 
-  <title>Anasayfa - Arda Akmeşe</title> <! –– Title bilgisi verildi   ––>
+  <title>Bana Yaz - Arda Akmeşe</title> <! –– Title bilgisi verildi   ––>
   <link rel="shortcut icon" href="./images/page_name.png" /> <! –– Title yanına websitesi iconu eklendi   ––>
   <link rel="stylesheet" href="./css/akmese.css" /> <! –– Css kuralları dosyası html'e tanıtıldı.   ––>
   <script src="script/akmese.js"></script> <! –– Javascript kuralları dosyası html'e tanıtıldı.   ––>
@@ -32,7 +32,8 @@ Geliştirilirken kullanılan tarayıcı : Opera
     <table class="mainTable">   <! –– mainTable div içerisindeki bütün elementleri düzgün yerleştirmek için konuldu   ––>
 
       <tr>
-        <th><img class="avatarStyle" src="./images/avatar.png" id="avatar" alt="Arda Akmeşe Resim"/></th>
+        <th><img class="avatarStyle" onmouseover = "imageHover(this)" onmouseout= "imageLeave(this)" onclick = "getHome()"
+           src="./images/avatar.png" alt="Arda Akmeşe Resim"/></th>
         <th>  <! –– Table ilk headerımız websitesi avatar resmimiz  ––>
           <table class= "buttonContainerTable">   <! ––  butonlar bir tablo içerisinde tutuldu ve header olarak ilk tabloya eklendi  ––>
             <td><button class = "button buttonNormal" onclick="getHome()">Anasayfa</button></td>
