@@ -24,3 +24,11 @@ function getHome() {
 function getInterest() {
     location.href = 'interests.html';
 }
+
+function getGithub(){
+    location.href =  'https://github.com/ardakmese/personalHtml';
+}
+
+function getLinkedin(){
+  location.href =  'https://www.linkedin.com/in/arda-akme%C5%9Fe-46797110b/';
+}
