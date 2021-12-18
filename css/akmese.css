@@ -1,9 +1,18 @@
+/*
+  Body bölümünün style'ını içermektedir
+  Linear gradient arka plandaki resmin üzerine opacity efektiyle daha güzel gözükmesini sağlamıştır
+*/
 body {
   background-image: linear-gradient(to bottom, rgba(240,240,120,0.8), rgba(30,30,30,0.8)) , url(../images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/*
+    Sol taraftaki avatar resminin style'ını içermektedir
+    radius efekti fotoğrafı yuvarlak şekil içerisine almaktadır
+    bulunduğu div'e direk yapışmamak için margin kullanılmıştır
+*/
 .avatarStyle {
   width: 180px;
   height: 200px;
@@ -17,6 +26,9 @@ body {
   position: relative;
 }
 
+/*
+  Ortadaki elemanların hepsini container şekilde içeren div'in style'ı
+*/
 .mainDiv {
   width: 55%;
   height: 80%;
@@ -28,44 +40,67 @@ body {
   box-shadow: 5px 10px 8px rgb(0,0,0,0.5);
 }
 
+/*
+  Web siteler değiştikçe buradaki middleDiv içeriği değişmektedir
+*/
 .middleDiv {
   align-self : center;
   justify-content: center;
   padding-top: -60px;
   margin-top: -30px;
   margin-left: 25px;
-  width: 100%;
+  width: 95%;
   height: 350px  ;
   overflow: auto;
   overflow-x: hidden;
+
 }
 
+/*
+  middleDiv içerisindeki p ve h4 elementlerinin style'ı
+*/
+.middleDiv p, h4, a {
+  text-align: center;
+  font-size: 13px;
+  color: rgb(180,180,120);
+  font-family:verdana;
+}
+
+
+/*
+  Scrollbar'ın daha güzel gözükmesi için güncellenmiştir
+*/
 ::-webkit-scrollbar {
   width: 15px;
 }
 
+/*
+  Scrollbar'ın daha güzel gözükmesi için güncellenmiştir
+*/
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
 
+/*
+  Scrollbar'ın daha güzel gözükmesi için güncellenmiştir
+*/
 ::-webkit-scrollbar-thumb {
   background: rgb(180,180,120);
   border-radius: 10px;
 }
 
-.middleDiv p {
-  text-align: center;
-  color: rgb(180,180,120);
-  font-size: 14px;
-  font-family:verdana;
-}
-
+/*
+  buttonları contain eden table'ın sol tarafa boşluk koymak için style gerekmektedir
+*/
 .buttonContainerTable {
   padding-left:60px;
   width=100%;
 }
 
+/*
+  avatar resminin altındaki kısa bilgi bölümünün style'ı
+*/
 .breefInfoTd {
   position:  fixed;
   padding-top: 35px;
@@ -76,6 +111,9 @@ body {
   color: rgb(180,180,120);
 }
 
+/*
+  buttonların başlangıç style'ı
+*/
 .button {
   background-color: #4CAF50;
   border: none;
@@ -92,6 +130,9 @@ body {
   cursor: pointer;
 }
 
+/*
+  buttonların herhangi bir etkileşim içerisine girmeden önceki style'ı
+*/
 .buttonNormal {
   background-color: transparent;
   color: rgb(180,180,120);
@@ -99,6 +140,10 @@ body {
   border-radius: 50px;
 }
 
+/*
+  buttonların hover olması durumundaki style'ı
+  bu style ile mouse hover olması durumunda transition ile mouse arka plan rengi değişmektedir
+*/
 .buttonNormal:hover {
   background-color: rgba(50,51,0,0.7);
 }
