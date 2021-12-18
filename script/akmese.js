@@ -4,6 +4,17 @@ function imageHover(image){
   image.style.cursor = "pointer";
 }
 
+function writeMe() {
+  if (document.getElementById("icerik").value == "" || document.getElementById("adSoyad").value == "")
+  {
+    alert("Lütfen alanları doldurunuz!");
+    return;
+  }
+  document.getElementById("icerik").value = "";
+  document.getElementById("adSoyad").value = "";
+  alert("Mesajınız gönderildi!");
+}
+
 function imageLeave(image){
   image.style.boxShadow = "0px 0px 0px rgb(0,0,0,0)";
   image.style.transitionDuration = "0.2s";

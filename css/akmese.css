@@ -59,7 +59,7 @@ body {
 /*
   middleDiv içerisindeki p ve h4 elementlerinin style'ı
 */
-.middleDiv p, h4, a {
+.middleDiv p, h4, a, label {
   text-align: center;
   font-size: 13px;
   color: rgb(180,180,120);
@@ -151,6 +151,18 @@ body {
 .icon{
   width: 25px;
   height: 25px;
-  filter: saturate(3); 
+  filter: saturate(3);
   /* background: linear-gradient(rgba(240,240,120,0.8), rgba(30,30,30,0.8)); */
+}
+.textStyle{
+  width: 85%;
+  background-color:rgb(50,51,0);
+  color: rgb(180,180,120);
+}
+.textArea{
+  margin-left: 70px;
+  width: 85%;
+  height: 200px;
+  background-color:rgb(50,51,0);
+  color: rgb(180,180,120);
 }
